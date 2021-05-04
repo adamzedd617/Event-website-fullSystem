@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Varela|Varela+Round');
+
+.popup-msg {
+  display: table;
+  margin: auto;
+  position: absolute;
+  max-width: 200px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  user-select: none;
+  cursor: default;
+  
+  background: linear-gradient(-180deg, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.94) 100%);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.05), 0 1px 5px 0 rgba(0,0,0,0.05), 0 3px 15px 0 rgba(0,0,0,0.05), 0 10px 35px 0 rgba(0,0,0,0.05), inset 4px 0 0 0 rgba(209,91,91,0.95), 0 0 0 1px rgba(0,0,0,0.03);
+  border-radius: 3px;
+  -webkit-filter: blur(0px);
+  
+  transition: transform 500ms ease, box-shadow 500ms ease, -webkit-filter 500ms ease;
+  transform: perspective(500px) translateZ(0px) rotateZ(0deg) rotateX(0deg);
+}
+
+.popup-msg .pop-p {
+  padding: 0;
+  margin: 0;
+  opacity: 0.55;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  text-shadow: 0 1px 0 #FFFFFF;
+  max-width: 200px;
+  text-align: center;
+}
+
+.popup-msg .pop-h2 {
+  font-weight: normal;
+  font-family: VarelaRound-Regular;
+  font-size: 20px;
+  color: #D15B5B;
+  letter-spacing: 0;
+  text-shadow: 0 1px 0 #FFFFFF;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.popup-msg:active {
+  transition: transform 100ms ease, box-shadow 100ms ease, -webkit-filter 100ms ease;
+  transform: perspective(500px) translateZ(-20px) rotateZ(0.5deg) rotateX(-3deg);
+  -webkit-filter: blur(0.px);
+  
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,00), 0 0px 0px 0 rgba(0,0,0,0), inset 4px 0 0 0 rgba(209,91,91,0.95), 0 0 0 1px rgba(0,0,0,0);
+}

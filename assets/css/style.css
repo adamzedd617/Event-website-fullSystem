@@ -1,0 +1,89 @@
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  width: 200px;
+  position: relative;
+}
+
+.animated-item {
+  background: linear-gradient(to right, #fea82f 0%, #eb8242 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-item {
+  font-size: 45px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 7s linear infinite 0s;
+}
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+.animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+.animated-item:nth-child(4n+4) {
+  animation-delay: 5s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.footer-bottom {
+  padding: 10px 0px;
+}
+.footer-bottom ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.footer-bottom ul li a{
+  color:#fff;
+}
+
+.footer-bottom ul {
+  float: right;
+  padding: 10px 0px;
+}
+
+.footer-bottom ul li:last-child {
+  margin-right: 0;
+}
+
